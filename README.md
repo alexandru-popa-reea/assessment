@@ -15,5 +15,9 @@
 ## Unit Testing and Integration Testing
 
 - a special attention was payd for testing all layers: controller, service, data
-- I have commited (just for convenience test reports here)
+- I have commited (just for convenience, test reports here)
+    - Tests Summary
+  ![Test Summary](jacoco/images/Tests.jpg?raw=true "Test Summary")
+    - Tests Coverage
+  ![Test Coverage](jacoco/images/TestCoverage.jpg?raw=true "Test Coverage")
 - code coverage is not very good, but this was just an exercise.... in a real world scenario we would aim to 100% code coverage
