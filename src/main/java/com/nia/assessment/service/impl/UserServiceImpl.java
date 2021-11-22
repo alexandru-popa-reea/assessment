@@ -28,6 +28,11 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     }
 
     @Override
+    public UserEntity getUser(String username) {
+        return userRepo.findByUsername(username).orElseThrow(() -> new RuntimeException("No user found with this username"));
+    }
+
+    @Override
     public UserEntity saveUser(UserEntity userEntity) {
         userEntity.setPassword(passwordEncoder.encode(userEntity.getPassword()));
         return userRepo.save(userEntity);

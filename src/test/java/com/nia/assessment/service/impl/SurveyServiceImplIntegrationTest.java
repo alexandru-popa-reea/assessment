@@ -52,6 +52,5 @@ class SurveyServiceImplIntegrationTest {
         then(survey.getPatient().getAge()).isEqualTo(surveyEntity.getPatient().getAge());
         then(survey.getPatient().getFirstName()).isEqualTo(surveyEntity.getPatient().getFirstName());
         then(survey.getPatient().getLastName()).isEqualTo(surveyEntity.getPatient().getLastName());
-
     }
 }
