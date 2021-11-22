@@ -1,0 +1,3 @@
+INSERT INTO USERS (ID, USERNAME, FIRST_NAME, LAST_NAME, EMAIL, PATIENT_ID, PASSWORD) VALUES (1, 'alex', 'Alex', 'Popa', 'alex.popa@email.com', 1, null);
+INSERT INTO USERS (ID, USERNAME, FIRST_NAME, LAST_NAME, EMAIL, PATIENT_ID, PASSWORD) VALUES (3, 'jim', 'Jim', 'Jackson', 'jim.jackson@email.com', 2, null);
+INSERT INTO USERS (ID, USERNAME, FIRST_NAME, LAST_NAME, EMAIL, PATIENT_ID, PASSWORD) VALUES (4, 'orlando', 'Orlando', 'Bloom', 'orlando.bloom@email.com', null, '$2a$10$f7QqupXZfX7uM4UGdqOeAurwPN1VTMB.BfUvwOkCsUQHZJ2tAE7hO');

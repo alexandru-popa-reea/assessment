@@ -1,0 +1,73 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.6'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id "org.flywaydb.flyway" version "8.0.4"
+    id 'java'
+    id 'jacoco'
+}
+
+group = 'com.nia'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = JavaVersion.VERSION_11
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+jacocoTestReport {
+    reports {
+        xml.required = false
+        csv.required = false
+        html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+    }
+}
+
+flyway {
+    url = 'jdbc:mysql://localhost:3306/' + System.getenv('MYSQL_DB_DATABASE_NIA')
+    user = System.getenv('MYSQL_DB_USER')
+    password = System.getenv('MYSQL_DB_PASSWORD')
+    locations = ['classpath:db/migration']
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    set('testcontainersVersion', "1.16.0")
+}
+
+flywayMigrate.dependsOn classes
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.5.6'
+    implementation 'org.springframework.boot:spring-boot-starter-security:2.5.6'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.5.6'
+    implementation group: 'com.auth0', name: 'java-jwt', version: '3.18.2'
+
+    implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+    implementation "io.springfox:springfox-bean-validators:3.0.0"
+
+    implementation 'org.flywaydb:flyway-core:8.0.4'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    runtimeOnly 'mysql:mysql-connector-java:8.0.26'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.6'
+    testImplementation 'org.springframework.security:spring-security-test:5.5.1'
+    testImplementation 'org.testcontainers:junit-jupiter:1.16.2'
+    testImplementation 'org.testcontainers:mysql:1.16.2'
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.testcontainers:testcontainers-bom:${testcontainersVersion}"
+    }
+}
+
+test {
+    useJUnitPlatform()
+}

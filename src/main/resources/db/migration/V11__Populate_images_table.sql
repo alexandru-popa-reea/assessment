@@ -1,0 +1,2 @@
+INSERT INTO IMAGES (ID, IMG_PATH, CREATED_DATE, ASSESSMENT_ID) VALUES (1, '/some/path/to/a/file/image.jpg', '2021-11-16 21:57:11', 1);
+INSERT INTO IMAGES (ID, IMG_PATH, CREATED_DATE, ASSESSMENT_ID) VALUES (2, '/some/path/to/a/file/image.jpg', '2021-11-16 21:57:11', 1);

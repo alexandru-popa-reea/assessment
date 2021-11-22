@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - AssessmentApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>AssessmentApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.nia.assessment.html">com.nia.assessment</a> &gt; AssessmentApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.003s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2021-11-22 10:04:16.691  INFO 3325 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nia.assessment.AssessmentApplicationTests], using SpringBootContextLoader
+2021-11-22 10:04:16.692  INFO 3325 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.nia.assessment.AssessmentApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-11-22 10:04:16.693  INFO 3325 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nia.assessment.AssessmentApplicationTests]: AssessmentApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-11-22 10:04:16.696  INFO 3325 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nia.assessment.AssessmentApplication for test class com.nia.assessment.AssessmentApplicationTests
+2021-11-22 10:04:16.700  INFO 3325 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-11-22 10:04:16.700  INFO 3325 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@729f59cc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2bd14276, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3ef1f362, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1858c2fe, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1001b900, org.springframework.test.context.support.DirtiesContextTestExecutionListener@31e29b84, org.springframework.test.context.transaction.TransactionalTestExecutionListener@390439, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5e2879f2, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@437c028e, org.springframework.test.context.event.EventPublishingTestExecutionListener@66e79fde, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@2e3747f7, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@33cd5c2a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@108650af, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4ac5340e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5ed9da5e, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@72ce1a3, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@258dcac1]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.6)
+
+2021-11-22 10:04:16.719  INFO 3325 --- [    Test worker] c.n.a.AssessmentApplicationTests         : Starting AssessmentApplicationTests using Java 13.0.8 on 192-168-0-3.rdsnet.ro with PID 3325 (started by alex in /Volumes/ExtSSD_Samsung/Learning/Java/ria2/assessment)
+2021-11-22 10:04:16.720  INFO 3325 --- [    Test worker] c.n.a.AssessmentApplicationTests         : No active profile set, falling back to default profiles: default
+2021-11-22 10:04:17.292  INFO 3325 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-22 10:04:17.315  INFO 3325 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
+2021-11-22 10:04:17.565 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69
+2021-11-22 10:04:17.623  INFO 3325 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2021-11-22 10:04:17.623  INFO 3325 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/nia (MySQL 8.0)
+2021-11-22 10:04:17.660  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 12 migrations (execution time 00:00.017s)
+2021-11-22 10:04:17.676  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema `nia`: 12
+2021-11-22 10:04:17.678  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema `nia` is up to date. No migration necessary.
+2021-11-22 10:04:17.747  INFO 3325 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-22 10:04:17.751  WARN 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : ConnPool - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2021-11-22 10:04:17.751 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : ConnPool - configuration:
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension................................false
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : autoCommit................................true
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : catalog................................none
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : connectionInitSql................................none
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : connectionTestQuery................................&quot;select 1 from dual&quot;
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : connectionTimeout................................50000
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSource................................none
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSourceClassName................................none
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI................................none
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSourceProperties................................{maintainTimeStats=false, password=&lt;masked&gt;, rewriteBatchedStatements=true, prepStmtCacheSqlLimit=2048, elideSetAutoCommits=true, cacheResultSetMetadata=true, cachePrepStmts=true, prepStmtCacheSize=250, useServerPrepStmts=true, useLocalSessionState=true, cacheServerConfiguration=true}
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : driverClassName................................&quot;com.mysql.cj.jdbc.Driver&quot;
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName................................none
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : healthCheckProperties................................{}
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry................................none
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : idleTimeout................................300000
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout................................1
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries................................false
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : jdbcUrl................................jdbc:mysql://localhost:3306/nia
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : keepaliveTime................................0
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold................................0
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : maxLifetime................................900000
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : maximumPoolSize................................10
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : metricRegistry................................none
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory................................none
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : minimumIdle................................10
+2021-11-22 10:04:17.752 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : password................................&lt;masked&gt;
+2021-11-22 10:04:17.753 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : poolName................................&quot;ConnPool&quot;
+2021-11-22 10:04:17.753 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : readOnly................................false
+2021-11-22 10:04:17.753 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : registerMbeans................................false
+2021-11-22 10:04:17.753 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : scheduledExecutor................................none
+2021-11-22 10:04:17.753 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : schema................................none
+2021-11-22 10:04:17.753 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : threadFactory................................internal
+2021-11-22 10:04:17.753 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : transactionIsolation................................default
+2021-11-22 10:04:17.753 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : username................................&quot;root&quot;
+2021-11-22 10:04:17.753 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : validationTimeout................................5000
+2021-11-22 10:04:17.753  INFO 3325 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : ConnPool - Starting...
+2021-11-22 10:04:17.774 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@69460969
+2021-11-22 10:04:17.774  INFO 3325 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : ConnPool - Start completed.
+2021-11-22 10:04:17.775  INFO 3325 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-11-22 10:04:17.819  INFO 3325 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-22 10:04:17.819  INFO 3325 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-22 10:04:17.884 DEBUG 3325 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Pool stats (total=1, active=0, idle=1, waiting=0)
+2021-11-22 10:04:17.902 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@5700d298
+2021-11-22 10:04:17.919 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@669d6251
+2021-11-22 10:04:17.942 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@372f2dd7
+2021-11-22 10:04:17.948  WARN 3325 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-22 10:04:17.960 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e0b55c8
+2021-11-22 10:04:17.978 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@33617641
+2021-11-22 10:04:18.002 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d13266e
+2021-11-22 10:04:18.018 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d73d433
+2021-11-22 10:04:18.048 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e42085
+2021-11-22 10:04:18.069 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@61a6d282
+2021-11-22 10:04:18.069 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - After adding stats (total=10, active=0, idle=10, waiting=0)
+2021-11-22 10:04:18.776  INFO 3325 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@40509f88, org.springframework.security.web.context.SecurityContextPersistenceFilter@1330fcb6, org.springframework.security.web.header.HeaderWriterFilter@789ee5d1, org.springframework.web.filter.CorsFilter@486ee483, org.springframework.security.web.authentication.logout.LogoutFilter@5ab0f3a6, com.nia.assessment.filter.CustomAuthorizationFilter@30a551e1, com.nia.assessment.filter.CustomAuthenticationFilter@6d02db8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@efdcc20, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1420043, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42b85e35, org.springframework.security.web.session.SessionManagementFilter@56833fe6, org.springframework.security.web.access.ExceptionTranslationFilter@3ac4f292, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@528c89e4]
+2021-11-22 10:04:19.609  INFO 3325 --- [    Test worker] c.n.a.AssessmentApplicationTests         : Started AssessmentApplicationTests in 2.907 seconds (JVM running for 51.002)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at 22 Nov 2021, 10:04:22</p>
+</div>
+</div>
+</body>
+</html>

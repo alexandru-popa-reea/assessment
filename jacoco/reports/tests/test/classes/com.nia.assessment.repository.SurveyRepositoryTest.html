@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - SurveyRepositoryTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>SurveyRepositoryTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.nia.assessment.repository.html">com.nia.assessment.repository</a> &gt; SurveyRepositoryTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.093s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.028s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGet_Survey_returns_SurveyDetails()</td>
+<td class="success">0.065s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2021-11-22 10:03:56.746  INFO 3325 --- [    Test worker] b.t.a.o.j.DataJpaTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.nia.assessment.repository.SurveyRepositoryTest], using SpringBootContextLoader
+2021-11-22 10:03:56.747  INFO 3325 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.nia.assessment.repository.SurveyRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-11-22 10:03:56.747  INFO 3325 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.nia.assessment.repository.SurveyRepositoryTest]: SurveyRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-11-22 10:03:56.750  INFO 3325 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.nia.assessment.AssessmentApplication for test class com.nia.assessment.repository.SurveyRepositoryTest
+2021-11-22 10:03:56.751  INFO 3325 --- [    Test worker] b.t.a.o.j.DataJpaTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-11-22 10:03:56.751  INFO 3325 --- [    Test worker] b.t.a.o.j.DataJpaTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7f254743, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@12e45d4f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3f13488f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@59e67d7a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@cac365a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3c921ca5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@19607c88, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7307cf73, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@1e7429af, org.springframework.test.context.event.EventPublishingTestExecutionListener@32af79f0, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@28b1c711, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6500f923, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5a069d7d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@132f0f34, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3580cb0f, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@572be57d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@39a87790]
+2021-11-22 10:03:56.753  INFO 3325 --- [    Test worker] &#x1f433; [mysql:8.0.26]                        : Creating container for image: mysql:8.0.26
+2021-11-22 10:03:56.886  INFO 3325 --- [    Test worker] &#x1f433; [mysql:8.0.26]                        : Starting container with ID: 46cd0f05f738abe17261bbda7f648b9ee34ab03ebd109ec6a916852eea9d225d
+2021-11-22 10:03:57.383  INFO 3325 --- [    Test worker] &#x1f433; [mysql:8.0.26]                        : Container mysql:8.0.26 is starting: 46cd0f05f738abe17261bbda7f648b9ee34ab03ebd109ec6a916852eea9d225d
+2021-11-22 10:03:57.410  INFO 3325 --- [    Test worker] &#x1f433; [mysql:8.0.26]                        : Waiting for database connection to become available at jdbc:mysql://localhost:54367/nia using query 'SELECT 1'
+2021-11-22 10:04:11.667  INFO 3325 --- [    Test worker] &#x1f433; [mysql:8.0.26]                        : Container is started (JDBC URL: jdbc:mysql://localhost:54367/nia)
+2021-11-22 10:04:11.668  INFO 3325 --- [    Test worker] &#x1f433; [mysql:8.0.26]                        : Container mysql:8.0.26 started in PT14.9152S
+2021-11-22 10:04:11.708  INFO 3325 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2021-11-22 10:04:11.708  INFO 3325 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:54367/nia (MySQL 8.0)
+2021-11-22 10:04:11.753  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 12 migrations (execution time 00:00.016s)
+2021-11-22 10:04:11.788  INFO 3325 --- [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table `nia`.`flyway_schema_history` ...
+2021-11-22 10:04:11.873  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema `nia`: &lt;&lt; Empty Schema &gt;&gt;
+2021-11-22 10:04:11.881  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema `nia` to version &quot;01 - Create patients table&quot;
+2021-11-22 10:04:12.001  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema `nia` to version &quot;02 - Create users table&quot;
+2021-11-22 10:04:12.142  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema `nia` to version &quot;03 - Create rel users to patients table&quot;
+2021-11-22 10:04:12.256  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema `nia` to version &quot;04 - Create assessment types table&quot;
+2021-11-22 10:04:12.373  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema `nia` to version &quot;05 - Create assessments table&quot;
+2021-11-22 10:04:12.440  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema `nia` to version &quot;06 - Create images table&quot;
+2021-11-22 10:04:12.576  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema `nia` to version &quot;07 - Populate patients table&quot;
+2021-11-22 10:04:12.681  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema `nia` to version &quot;08 - Populate users table&quot;
+2021-11-22 10:04:12.727  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema `nia` to version &quot;09 - Populate assessment types table&quot;
+2021-11-22 10:04:12.793  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema `nia` to version &quot;10 - Populate assessments table&quot;
+2021-11-22 10:04:12.872  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema `nia` to version &quot;11 - Populate images table&quot;
+2021-11-22 10:04:12.940  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema `nia` to version &quot;12 - Create surveys table&quot;
+2021-11-22 10:04:13.026  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 12 migrations to schema `nia`, now at version v12 (execution time 00:01.163s)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.6)
+
+2021-11-22 10:04:13.087  INFO 3325 --- [    Test worker] c.n.a.repository.SurveyRepositoryTest    : Starting SurveyRepositoryTest using Java 13.0.8 on 192-168-0-3.rdsnet.ro with PID 3325 (started by alex in /Volumes/ExtSSD_Samsung/Learning/Java/ria2/assessment)
+2021-11-22 10:04:13.088  INFO 3325 --- [    Test worker] c.n.a.repository.SurveyRepositoryTest    : No active profile set, falling back to default profiles: default
+2021-11-22 10:04:13.223  INFO 3325 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-22 10:04:13.243  INFO 3325 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2021-11-22 10:04:13.351 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69
+2021-11-22 10:04:13.397  INFO 3325 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 8.0.4 by Redgate
+2021-11-22 10:04:13.397  INFO 3325 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:mysql://localhost:3306/nia (MySQL 8.0)
+2021-11-22 10:04:13.448  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 12 migrations (execution time 00:00.029s)
+2021-11-22 10:04:13.481  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema `nia`: 12
+2021-11-22 10:04:13.482  INFO 3325 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema `nia` is up to date. No migration necessary.
+2021-11-22 10:04:13.529  INFO 3325 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-22 10:04:13.533  WARN 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : ConnPool - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2021-11-22 10:04:13.534 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : ConnPool - configuration:
+2021-11-22 10:04:13.534 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension................................false
+2021-11-22 10:04:13.534 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : autoCommit................................true
+2021-11-22 10:04:13.534 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : catalog................................none
+2021-11-22 10:04:13.534 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : connectionInitSql................................none
+2021-11-22 10:04:13.534 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : connectionTestQuery................................&quot;select 1 from dual&quot;
+2021-11-22 10:04:13.534 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : connectionTimeout................................50000
+2021-11-22 10:04:13.534 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSource................................none
+2021-11-22 10:04:13.534 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSourceClassName................................none
+2021-11-22 10:04:13.534 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI................................none
+2021-11-22 10:04:13.534 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : dataSourceProperties................................{maintainTimeStats=false, password=&lt;masked&gt;, rewriteBatchedStatements=true, prepStmtCacheSqlLimit=2048, elideSetAutoCommits=true, cacheResultSetMetadata=true, cachePrepStmts=true, prepStmtCacheSize=250, useServerPrepStmts=true, useLocalSessionState=true, cacheServerConfiguration=true}
+2021-11-22 10:04:13.534 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : driverClassName................................&quot;com.mysql.cj.jdbc.Driver&quot;
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName................................none
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : healthCheckProperties................................{}
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry................................none
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : idleTimeout................................300000
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout................................1
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries................................false
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : jdbcUrl................................jdbc:mysql://localhost:54367/nia
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : keepaliveTime................................0
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold................................0
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : maxLifetime................................900000
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : maximumPoolSize................................10
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : metricRegistry................................none
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory................................none
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : minimumIdle................................10
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : password................................&lt;masked&gt;
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : poolName................................&quot;ConnPool&quot;
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : readOnly................................false
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : registerMbeans................................false
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : scheduledExecutor................................none
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : schema................................none
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : threadFactory................................internal
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : transactionIsolation................................default
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : username................................&quot;root&quot;
+2021-11-22 10:04:13.535 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.HikariConfig           : validationTimeout................................5000
+2021-11-22 10:04:13.535  INFO 3325 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : ConnPool - Starting...
+2021-11-22 10:04:13.561 DEBUG 3325 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d8ada54
+2021-11-22 10:04:13.562  INFO 3325 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : ConnPool - Start completed.
+2021-11-22 10:04:13.563  INFO 3325 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-11-22 10:04:13.641  INFO 3325 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-22 10:04:13.641  INFO 3325 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-22 10:04:13.670 DEBUG 3325 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Pool stats (total=1, active=0, idle=1, waiting=0)
+2021-11-22 10:04:13.695 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@2328a8e5
+2021-11-22 10:04:13.718 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@434e70a2
+2021-11-22 10:04:13.745 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@58906ff
+2021-11-22 10:04:13.762 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@28e50f0c
+2021-11-22 10:04:13.780 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b65887c
+2021-11-22 10:04:13.797 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@546800c3
+2021-11-22 10:04:13.814 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@7fddddce
+2021-11-22 10:04:13.835 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@45d059a1
+2021-11-22 10:04:13.859 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - Added connection com.mysql.cj.jdbc.ConnectionImpl@58647aa1
+2021-11-22 10:04:13.860 DEBUG 3325 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : ConnPool - After adding stats (total=10, active=0, idle=10, waiting=0)
+2021-11-22 10:04:13.914  INFO 3325 --- [    Test worker] c.n.a.repository.SurveyRepositoryTest    : Started SurveyRepositoryTest in 0.864 seconds (JVM running for 45.307)
+2021-11-22 10:04:13.925  INFO 3325 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@72c85e62 testClass = SurveyRepositoryTest, testInstance = com.nia.assessment.repository.SurveyRepositoryTest@7e938bab, testMethod = testGet_Survey_returns_SurveyDetails@SurveyRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67ac92c4 testClass = SurveyRepositoryTest, locations = '{}', classes = '{class com.nia.assessment.AssessmentApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@513f4d30, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@16296537, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fb6c4d48, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@55839450, [ImportsContextCustomizer@25ec7ef4 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2911bb87, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@40dfe7da, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@f6121e07, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@2dcf9fda]; rollback [true]
+Hibernate: 
+    insert 
+    into
+        PATIENTS
+        (AGE, FIRST_NAME, LAST_NAME) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        patientent0_.ID as id1_0_0_,
+        patientent0_.AGE as age2_0_0_,
+        patientent0_.FIRST_NAME as first_na3_0_0_,
+        patientent0_.LAST_NAME as last_nam4_0_0_ 
+    from
+        PATIENTS patientent0_ 
+    where
+        patientent0_.ID=?
+Hibernate: 
+    insert 
+    into
+        SURVEYS
+        (CREATED_DATE, PATIENT_ID, SKIN_GRADE, SLEEP_GRADE) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    select
+        surveyenti0_.ID as id1_1_0_,
+        surveyenti0_.CREATED_DATE as created_2_1_0_,
+        surveyenti0_.PATIENT_ID as patient_5_1_0_,
+        surveyenti0_.SKIN_GRADE as skin_gra3_1_0_,
+        surveyenti0_.SLEEP_GRADE as sleep_gr4_1_0_,
+        patientent1_.ID as id1_0_1_,
+        patientent1_.AGE as age2_0_1_,
+        patientent1_.FIRST_NAME as first_na3_0_1_,
+        patientent1_.LAST_NAME as last_nam4_0_1_ 
+    from
+        SURVEYS surveyenti0_ 
+    left outer join
+        PATIENTS patientent1_ 
+            on surveyenti0_.PATIENT_ID=patientent1_.ID 
+    where
+        surveyenti0_.ID=?
+Hibernate: 
+    select
+        surveyenti0_.ID as id1_1_,
+        surveyenti0_.CREATED_DATE as created_2_1_,
+        surveyenti0_.PATIENT_ID as patient_5_1_,
+        surveyenti0_.SKIN_GRADE as skin_gra3_1_,
+        surveyenti0_.SLEEP_GRADE as sleep_gr4_1_ 
+    from
+        SURVEYS surveyenti0_ 
+    left outer join
+        PATIENTS patientent1_ 
+            on surveyenti0_.PATIENT_ID=patientent1_.ID 
+    where
+        patientent1_.FIRST_NAME=? 
+        and patientent1_.LAST_NAME=? 
+        and patientent1_.AGE=?
+Hibernate: 
+    select
+        surveys0_.PATIENT_ID as patient_5_1_0_,
+        surveys0_.ID as id1_1_0_,
+        surveys0_.ID as id1_1_1_,
+        surveys0_.CREATED_DATE as created_2_1_1_,
+        surveys0_.PATIENT_ID as patient_5_1_1_,
+        surveys0_.SKIN_GRADE as skin_gra3_1_1_,
+        surveys0_.SLEEP_GRADE as sleep_gr4_1_1_ 
+    from
+        SURVEYS surveys0_ 
+    where
+        surveys0_.PATIENT_ID=?
+2021-11-22 10:04:13.986  INFO 3325 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@72c85e62 testClass = SurveyRepositoryTest, testInstance = com.nia.assessment.repository.SurveyRepositoryTest@7e938bab, testMethod = testGet_Survey_returns_SurveyDetails@SurveyRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67ac92c4 testClass = SurveyRepositoryTest, locations = '{}', classes = '{class com.nia.assessment.AssessmentApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@513f4d30, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@16296537, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fb6c4d48, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@55839450, [ImportsContextCustomizer@25ec7ef4 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2911bb87, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@40dfe7da, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@f6121e07, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]
+2021-11-22 10:04:13.993  INFO 3325 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@72c85e62 testClass = SurveyRepositoryTest, testInstance = com.nia.assessment.repository.SurveyRepositoryTest@7fb406f7, testMethod = contextLoads@SurveyRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67ac92c4 testClass = SurveyRepositoryTest, locations = '{}', classes = '{class com.nia.assessment.AssessmentApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@513f4d30, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@16296537, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fb6c4d48, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@55839450, [ImportsContextCustomizer@25ec7ef4 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2911bb87, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@40dfe7da, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@f6121e07, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@2dcf9fda]; rollback [true]
+2021-11-22 10:04:14.013  INFO 3325 --- [    Test worker] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test: [DefaultTestContext@72c85e62 testClass = SurveyRepositoryTest, testInstance = com.nia.assessment.repository.SurveyRepositoryTest@7fb406f7, testMethod = contextLoads@SurveyRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@67ac92c4 testClass = SurveyRepositoryTest, locations = '{}', classes = '{class com.nia.assessment.AssessmentApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@513f4d30, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@16296537, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@351584c0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fb6c4d48, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@55839450, [ImportsContextCustomizer@25ec7ef4 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.liquibase.LiquibaseAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManagerAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2911bb87, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@40dfe7da, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@f6121e07, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@0], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -&gt; false]]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at 22 Nov 2021, 10:04:22</p>
+</div>
+</div>
+</body>
+</html>
