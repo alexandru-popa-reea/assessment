@@ -14,7 +14,7 @@
 
 ## Unit Testing and Integration Testing
 
-- a special attention was payd for testing all layers: controller, service, data
+- a special attention was paid for testing all layers: controller, service, data
 - I have commited (just for convenience, test reports here)
     - Tests Summary
   ![Test Summary](jacoco/images/Tests.jpg?raw=true "Test Summary")
