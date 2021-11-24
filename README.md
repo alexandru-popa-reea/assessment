@@ -19,5 +19,5 @@
     - Tests Summary
   ![Test Summary](jacoco/images/Tests.jpg?raw=true "Test Summary")
     - Tests Coverage
-  ![Test Coverage](jacoco/images/TestCoverage.jpg?raw=true "Test Coverage")
+  ![Test Coverage](jacoco/images/TestsCoverage.jpg?raw=true "Test Coverage")
 - code coverage is not very good, but this was just an exercise.... in a real world scenario we would aim to 100% code coverage
