@@ -1,7 +1,9 @@
 package com.nia.assessment.controller;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,6 +22,8 @@ public class PingController {
 
 @Data
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 class PingDto {
     private int code;
     private String message;

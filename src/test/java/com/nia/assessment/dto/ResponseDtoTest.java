@@ -79,7 +79,7 @@ class ResponseDtoTest {
         //when //then
         then(responseDto_01.getStatus()).isEqualTo(200);
         then(responseDto_01.getMessage()).isEqualTo("SUCCESS");
-        then(responseDto_01.getPayload()).isNull();
+        then(responseDto_01.getPayload()).isExactlyInstanceOf(ResponsePayloadDefaultDto.class);
 
         then(new ResponseDto()).isEqualTo(new ResponseDto());
     }

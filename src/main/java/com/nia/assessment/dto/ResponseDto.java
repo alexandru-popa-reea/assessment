@@ -16,6 +16,8 @@ public class ResponseDto {
     private Object payload;
 
     public ResponseDto() {
+        this.status = 200;
+        this.message = "SUCCESS";
         this.payload = new ResponsePayloadDefaultDto();
     }
 

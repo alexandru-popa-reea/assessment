@@ -11,7 +11,10 @@ import com.nia.assessment.service.TokenService;
 import com.nia.assessment.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -61,7 +64,7 @@ public class TokenController {
     @ApiOperation(value = "This method is used to obtain a new access token (using the refresh token).")
     @GetMapping("/token/refresh")
     @SuppressWarnings("rawtypes")
-    public ResponseEntity refreshToken(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    public ResponseEntity refreshToken(HttpServletRequest request, HttpServletResponse response) {
         String authorizationHeader = request.getHeader(AUTHORIZATION);
         if (authorizationHeader != null && authorizationHeader.startsWith("Bearer ")) {
             try {
@@ -124,6 +127,9 @@ public class TokenController {
 }
 
 @Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 class UserDto {
     @NotNull
     private String username;
